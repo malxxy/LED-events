@@ -1,7 +1,7 @@
-:root {
+/* :root {
     --light: #;
     --dark: #;
-}
+} */
 
 html {
     background: rgb(38,38,38);
@@ -14,65 +14,66 @@ body {
     color:azure;
 }
 
-.container {
+  .container2 {
+    perspective: 1000px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .box2 {
     position: relative;
-    width: 300px;
-    height: 300px;
-    margin: 0 auto;
-    border: 1px solid black;
-    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 5s linear infinite;
   }
   
-  .sparkle {
+  .face {
     position: absolute;
-    width: 5px;
-    height: 5px;
-    background-color: rgba(255, 255, 255, 0.8);
-    animation: sparkle 1s ease-in-out infinite;
+    width: 200px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    font-size: 150px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
   }
   
-  @keyframes sparkle {
-    0% {
-      opacity: 0;
-      transform: translate(0, 0);
+  .front {
+    transform: translateZ(100px);
+  }
+  
+  .back {
+    transform: rotateY(180deg) translateZ(100px);
+  }
+  
+  .right {
+    transform: rotateY(90deg) translateZ(100px);
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translateZ(100px);
+  }
+  
+  .top {
+    transform: rotateX(-90deg) translateZ(100px);
+  }
+  
+  .bottom {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate3d(1, 1, 0, 0deg);
     }
-    50% {
-      opacity: 1;
-      transform: translate(150px, 150px);
-    }
-    100% {
-      opacity: 0;
-      transform: translate(300px, 300px);
+    to {
+      transform: rotate3d(1, 1, 0, 360deg);
     }
   }
-  
-  .sparkle:nth-child(1) {
-    top: 0;
-    left: 0;
-    animation-delay: 0s;
-  }
-  
-  .sparkle:nth-child(2) {
-    top: 0;
-    left: 60px;
-    animation-delay: 0.1s;
-  }
-  
-  .sparkle:nth-child(3) {
-    top: 60px;
-    left: 120px;
-    animation-delay: 0.2s;
-  }
-  
-  .sparkle:nth-child(4) {
-    top: 120px;
-    left: 60px;
-    animation-delay: 0.3s;
-  }
-  
-  .sparkle:nth-child(5) {
-    top: 120px;
-    left: 0;
-    animation-delay: 0.4s;
-  }
-  

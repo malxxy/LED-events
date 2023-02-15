@@ -19,30 +19,49 @@
 
 <body>
     <header>
-        <div id="LED-logo"></div>
-        <div class="container">
-            <div class="sparkle"></div>
-            <div class="sparkle"></div>
-            <div class="sparkle"></div>
-            <div class="sparkle"></div>
-            <div class="sparkle"></div>
-            <h1>LED Presents</h1>
-        </div>
-        
-        <nav>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#calendar">Calendar</a></li>
-            <li><a href=#connect>Connect</a></li>
+        <nav class="navbar navbar-light navbar-expand-md py-3">
+            <div class="container"><a class="navbar-brand d-flex align-items-center" href="#navbar">
+                <div class="collapse navbar-collapse" id="navcol-3">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Calendar</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Connect</a></li>
+                    </ul><button class="btn btn-primary" type="button">Follow Us</button>
+                </div>
+            </div>
         </nav>
     </header>
 
-    <div id="react-play"></div>
-
-    <div>
-        <h3>Get Connected</h3>
+    <div class="container2">
+        <div class="box2">
+            <div class="face front">L</div>
+            <div class="face back">D</div>
+            <div class="face top">E</div>
+            <div class="face bottom"></div>
+            <div class="face right"></div>
+            <div class="face left"></div>
+        </div>     
     </div>
 
+    <section id="events">
+        <div id="event-title">
+            <h3>Events</h3>
+        </div>
+        <div id="event-cards">
+            <div class="card">
 
+            </div>
+            <div class="card">
+                
+            </div>
+            <div class="card">
+                
+            </div>
+            <div class="card">
+                
+            </div>
+        </div>
+    </section>
 
     <footer>
         <li href="#about">About</li>
@@ -52,10 +71,5 @@
     </footer>
 
     <script src="js/animation.js"></script>
-    <!-- React JS -->
-    <!-- <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script> -->
-    <!-- Load React component. -->
-    <!-- <script src="js/react.js"></script> -->
 </body>
 </html>
