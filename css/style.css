@@ -10,9 +10,13 @@ html {
     height: 100%;
 }
 
-body {
-    color:azure;
+header { 
+  background: rgba(0,0,0,1);
 }
+
+/* body {
+    color:azure;
+} */
 
   .container2 {
     perspective: 1000px;
