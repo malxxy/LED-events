@@ -25,10 +25,11 @@
             <div class="container"><a class="navbar-brand d-flex align-items-center" href="#navbar">
                 <div class="collapse navbar-collapse" id="navcol-3">
                     <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link text-light" href="#">Events</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="#">Calendar</a></li>
-                        <li class="nav-item"><a class="nav-link text-light" href="#">Connect</a></li>
-                    </ul><button class="btn btn-light text-dark" type="button">Follow Us</button>
+                        <li class="nav-item"><a class="nav-link text-light" href="#events">Events</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="./html/calendar.html">Calendar</a></li>
+                        <li class="nav-item"><a class="nav-link text-light" href="#stay-connected">Connect</a></li>
+                    </ul>
+                    <a href="#follow-us"><button class="btn btn-light text-dark" type="button">Follow Us</button></a>
                 </div>
             </div>
         </nav>
@@ -46,7 +47,7 @@
         </div>     
     </div>
 
-    <section id="events" class="align-items-center">
+    <section id="events" class="align-items-center p-4">
         <div id="event-title">
             <h3>Events</h3>
         </div>
@@ -68,7 +69,7 @@
             <div class="col">
                 <div class="card">
                     <img src="img" class="card-img-top"
-                        alt="LED Susan" />
+                        alt="LED Susan"/>
                     <div class="card-body">
                         <h5 id="susan-title" class="card-title">LED DAY CLUB: DJ SUSAN</h5>
                         <p id="susan-date" class="date">SUN 03/26</p>
@@ -103,7 +104,7 @@
         </div>
     </section>
 
-    <section id="About">
+    <section id="About" class="p-4">
         <div id="about-title">
             <h3>About LED Presents</h3>
         </div>
@@ -112,20 +113,19 @@
         </div>
     </section>
 
-    <section id="stay-connected">
+    <section id="stay-connected" class="p-4">
         <div id="connected-title">
             <h3>Stay Connected</h3>
+            <div class="input-group-4 col">
+                <input  class="col-md-1"-1" type="text" id="name" name="name" placeholder="name">
+                <input class="col-md-1"type="text" id="email" name="email" placeholder="email@example.com">
+                <input class="col-md-1" type="text" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
+                <p>By subscribing, you agree to receive promotional messages sent via an autodialer, and this agreement is not a condition of any purchase. You also agree to the SimpleTexting  Terms of Service and  Privacy Policy.  3 Msgs/Month. Msg & Data rates may apply.</p>
+                <btn>Submit</btn>
+            </div>
         </div>
-        <div class="input-group">
-            <input type="text" id="email" name="email">
-            <btn>Email Me</btn>
-            <br><br>
-            <input type="text" id="phone" name="phone">
-            <btn>Text Me</btn>
-            <br><br>
-            <p>By subscribing, you agree to receive promotional messages sent via an autodialer, and this agreement isn’t a condition of any purchase. You also agree to the SimpleTexting  Terms of Service and  Privacy Policy.  3 Msgs/Month. Msg & Data rates may apply.</p>
-        </div>
-        <div id="contact-title">
+
+        <div id="follow-us" class="p-4">
             <h3>Follow Us</h3>
             <div id="socials">
                 <a href="https://www.instagram.com/ledpresents/"><i class="fa-brands fa-instagram"></i></a>
@@ -138,12 +138,37 @@
         </div>
     </section>
 
-    <footer>
-        <li href="#events">Events</li>
-        <li href="#about">About</li>
-        <li href="#contact">Stay Connected</li>
-        <li href="./html/calendar.html">Calendar</li>
-        <li href="./html/privacyPolicy.html">Privacy Policy</li>
+    <footer class="page-footer p-4">
+        <div class="container ">
+            <div class="row">
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a href="events">Events</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#stay-connected">Stay Connected</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a href="./html/calendar.html">Calendar</a></li>
+                        <li><a href="./html/privacyPolicy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul>
+                        <li><a href="https://www.instagram.com/ledpresents/"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                        <li><a href="https://www.youtube.com/user/LEDpresents/videos"><i class="fa-brands fa-youtube"></i>YouTube</a></li>
+                        <!-- <a href=""><i class="fa-brands fa-tiktok"></i></a> -->
+                        <li><a href="https://twitter.com/LEDpresents"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
+                        <li><a href="https://www.facebook.com/LEDpresents"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
+                        <li><a href="https://soundcloud.com/mylifeeveryday"><i class="fa-brands fa-soundcloud"></i>SoundCloud</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2023 LED Presents</p>
+        </div>
     </footer>
 
     <script src="js/animation.js"></script>
