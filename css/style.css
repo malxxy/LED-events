@@ -1,7 +1,15 @@
-/* :root {
-    --light: #;
-    --dark: #;
-} */
+:root {
+    --light: #EEE5FB;
+    --dark: #110622;
+    --deepPurple: #0E021C;
+    --darkPurple: #200446;
+    --medPurple: #310769;
+    --lightPurple: #43098F;
+    --lightestPurple: #AA84DD;
+    --grey: #19181B;
+    --lightGrey: #AAA5B1;
+    --pastelPurple: #E0CFF6;
+}
 
 html {
     background: rgb(38,38,38);
@@ -10,12 +18,12 @@ html {
     height: 100%;
 }
 
-header { 
-  background: rgba(0,0,0,1);
+header, footer { 
+  background: var(--dark);
 }
 
-footer {
-  background: rgba(0,0,0,1);
+footer li a {
+  color: var(--lightGrey);
 }
 
 /* body {
@@ -43,7 +51,7 @@ footer {
     position: absolute;
     width: 200px;
     height: 200px;
-    background-color: black;
+    background-color: var(--dark);
     color: white;
     font-size: 150px;
     font-weight: bold;
@@ -84,4 +92,42 @@ footer {
     to {
       transform: rotate3d(1, 1, 0, 360deg);
     }
+  }
+
+  .card {
+    border-color: #AA84DD;
+  }
+
+  #events {
+    background-color: var(--dark);
+  }
+
+  #about {
+    background-color: var(--pastelPurple);
+  }
+
+  #about-container {
+    border-radius: 15px;
+    background-color: var(--dark);
+    color:var(--light);
+    padding: 10px;
+  }
+
+  .responsive-img {
+    height:15%;
+    display:inline;
+    position:right;
+  }
+
+  .card img:hover {
+    opacity:0.80;
+  }
+
+  button {
+    background-color: #200446;
+    color:#E0CFF6;
+  }
+
+  i {
+    color: var(--lightestPurple);
   }

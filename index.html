@@ -22,15 +22,18 @@
 <body>
     <header>
         <nav class="navbar navbar-light navbar-expand-md py-3">
-            <div class="container"><a class="navbar-brand d-flex align-items-center" href="#navbar">
+            <div class="container">
+                <!-- <div class="navbar-nav">
+                    <li><img src="./img/LED-logo-white-1.png" class="responsive-img"></li>
+                </div> -->
                 <div class="collapse navbar-collapse" id="navcol-3">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item"><a class="nav-link text-light" href="#events">Events</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href="./html/calendar.html">Calendar</a></li>
                         <li class="nav-item"><a class="nav-link text-light" href="#stay-connected">Connect</a></li>
                     </ul>
-                    <a href="#follow-us"><button class="btn btn-light text-dark" type="button">Follow Us</button></a>
                 </div>
+                <a href="#follow-us"><button class="btn btn-light text-dark" type="button">Follow Us</button></a>
             </div>
         </nav>
     </header>
@@ -41,7 +44,8 @@
             <div class="face front">L</div>
             <div class="face back">D</div>
             <div class="face top">E</div>
-            <div class="face bottom"><span><i class="fa-light fa-eye"></i></span></div>
+            <!-- <div class="face bottom"><span><i class="fa-light fa-eye"></i></span></div> -->
+            <div class="face bottom"></div>
             <div class="face right"></div>
             <div class="face left"></div>
         </div>     
@@ -49,128 +53,186 @@
 
     <section id="events" class="align-items-center p-4">
         <div id="event-title">
-            <h3>Events</h3>
+            <h3 class="text-light py-2">Events</h3>
         </div>
 
-        <div id="event-cards" class="row row-cols-1 row-cols-md-2 g-4">
+        <div id="event-cards" class="row row-cols-1 row-cols-md-2 g-4 py-4">
             <div class="col">
                 <div class="card">
-                    <img src="img" class="card-img-top"
+                    <img src="./img/led.png" class="card-img-top img-fluid"
                         alt="LED DAY CLUB: JAUZ PRESENTS OFF THE DEEP END" />
                     <div class="card-body">
                         <h5 id="jauz-title" class="card-title">LED DAY CLUB: JAUZ PRESENTS OFF THE DEEP END</h5>
                         <p id="jauz-date" class="date">SUN 03/19</p>
                         <p id="jauz-location" class="location">HARD ROCK ROOFTOP</p>
-                        <a href="https://www.showclix.com/event/led-presents-jauz-at-hard-rock-rooftop/tag/LED-site"><btn>Tickets</btn></a>
+                        <a href="https://www.showclix.com/event/led-presents-jauz-at-hard-rock-rooftop/tag/LED-site"><btn class="tckts">Tickets</btn></a>
                     </div>
                 </div>
             </div>
 
             <div class="col">
                 <div class="card">
-                    <img src="img" class="card-img-top"
+                    <img src="./img/susan.png" class="card-img-top img-fluid"
                         alt="LED Susan"/>
                     <div class="card-body">
                         <h5 id="susan-title" class="card-title">LED DAY CLUB: DJ SUSAN</h5>
                         <p id="susan-date" class="date">SUN 03/26</p>
                         <p id="susan-location" class="location">HARD ROCK ROOFTOP</p>
-                        <a href="https://www.showclix.com/event/led-presents-dj-susan-at-hard-rock-rooftop/tag/LED-site"><btn>Tickets</btn></a>
+                        <a href="https://www.showclix.com/event/led-presents-dj-susan-at-hard-rock-rooftop/tag/LED-site"><btn class="tckts">Tickets</btn></a>
                     </div>
                 </div>
             </div>
 
             <div class="col">
                 <div class="card">
-                    <div class="card">
-                        <img src="img" class="card-img-top"
+                    <img src="./img/john.png" class="card-img-top img-fluid"
                             alt="John Summit Green Velevt and LF System in San Diego" />
+                    <div class="card-body">
                         <h5 id="john-title" class="card-title">OFF THE GRID: JOHN SUMMIT + GREEN VELVET + LF SYSTEM + RANGER TRUCCO</h5>
                         <p id="john-date" class="date">FRI 04/07</p>
                         <p id="john-location" class="location">GALLAGHER SQUARE</p>
-                        <a href="https://www.showclix.com/event/led-presents-john-summit-green-velvet-petco-park-san-diego/tag/LED-site"><btn>Tickets</btn></a>
+                        <a href="https://www.showclix.com/event/led-presents-john-summit-green-velvet-petco-park-san-diego/tag/LED-site"><btn class="tckts">Tickets</btn></a>
                     </div>
                 </div>
             </div>
 
+            <div class="col">
+                <div class="card">
+                    <img src="./img/led.png" class="card-img-top img-fluid"
+                            alt="Nurko" />
+                    <div class="card-body">
+                        <h5 id="nurko-title" class="event-header">LED DAY CLUB: NURKO</h5>
+                        <p id="nurko-date" class="date">SUN 04/30</p>
+                        <p id="nurko-location" class="location">HARD ROCK ROOFTOP</p>
+                        <a href="https://www.showclix.com/event/led-presents-nurko-at-hard-rock-rooftop/tag/LED-site"><btn class="tckts">Tickets</btn></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="p-4">
+        <div id="about-container" class="p-4 align-items-center">
+            <div id="about-title">
+                <h3>About LED Presents</h3>
+            </div>
             <div class="card">
-                <img src="img" class="card-img-top"
-                        alt="Nurko" />
-                <h5 id="nurko-title" class="event-header">LED DAY CLUB: NURKO</h5>
-                <p id="nurko-date" class="date">SUN 04/30</p>
-                <p id="nurko-location" class="location">HARD ROCK ROOFTOP</p>
-                <a href="https://www.showclix.com/event/led-presents-nurko-at-hard-rock-rooftop/tag/LED-site"><btn>Tickets</btn></a>
-            </div>
+                <div class="card-body">
+                    <h2 id="abour-title" class="event-header">About LED Presents</h2>
+                    <div class="py-2">
+                        <p>Bringing the best DJs and EDM experiences to San Diego, California.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="About" class="p-4">
-        <div id="about-title">
-            <h3>About LED Presents</h3>
-        </div>
-        <div>
-            <p>Bringing the best DJs and EDM experiences to San Diego, California.</p>
-        </div>
-    </section>
-
-    <section id="stay-connected" class="p-4">
-        <div id="connected-title">
+    <section id="stay-connected" class="p-4" style="background-color: var(--dark);">
+        <!-- <div id="connected-title">
             <h3>Stay Connected</h3>
             <div class="input-group-4 col">
                 <input  class="col-md-1"-1" type="text" id="name" name="name" placeholder="name">
                 <input class="col-md-1"type="text" id="email" name="email" placeholder="email@example.com">
                 <input class="col-md-1" type="text" id="phone" name="phone" placeholder="XXX-XXX-XXXX">
-                <p>By subscribing, you agree to receive promotional messages sent via an autodialer, and this agreement is not a condition of any purchase. You also agree to the SimpleTexting  Terms of Service and  Privacy Policy.  3 Msgs/Month. Msg & Data rates may apply.</p>
+                
                 <btn>Submit</btn>
             </div>
-        </div>
+        </div> -->
 
-        <div id="follow-us" class="p-4">
-            <h3>Follow Us</h3>
-            <div id="socials">
-                <a href="https://www.instagram.com/ledpresents/"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://www.youtube.com/user/LEDpresents/videos"><i class="fa-brands fa-youtube"></i></a>
-                <!-- <a href=""><i class="fa-brands fa-tiktok"></i></a> -->
-                <a href="https://twitter.com/LEDpresents"><i class="fa-brands fa-twitter"></i></a>
-                <a href="https://www.facebook.com/LEDpresents"><i class="fa-brands fa-facebook"></i></a>
-                <a href="https://soundcloud.com/mylifeeveryday"><i class="fa-brands fa-soundcloud"></i></a>
+        <section class="text-center download-section content-section" id="connected-title" >
+            <div class="container" id="connected">
+                <div class="col-lg-8 mx-auto">
+                    <section class="py-4 py-xl-3">
+                        <div class="container">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-6 col-xl-8">
+                                    <div class="card mb-5">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <h3 style="color: var(--darkPurple);">Stay Connected</h3>
+                                            <form class="login-form text-center" method="post">
+                                                <div class="mb-3"><input id="name" class="form-control" type="name" name="name" placeholder="First Name"></div>
+                                                <div class="mb-3"><input id="email" class="form-control" type="email" name="email" placeholder="Email"></div>
+                                                <div class="mb-3"><input id="phone" class="form-control" type="phone" name="phone" placeholder="XXX-XXX-XXXX"></div>
+                                                <div class="mb-3"><button class="btn btn-dark d-block w-100" type="submit" style="background: var(--dark);color: var(--light);">Submit</button></div>
+                                                <p class="text-muted">By subscribing, you agree to receive promotional messages sent via an autodialer, and this agreement is not a condition of any purchase. You also agree to the SimpleTexting  Terms of Service and  Privacy Policy.  3 Msgs/Month. Msg & Data rates may apply.</p>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
+        </section>
+
+        <div id="follow-us" class="align-items-center p2" style="background-color: var(--light);">
+            <div class="container align-items-center">
+                <div class="col-lg-8 mx-auto">
+                    <section class="py-4 py-xl-3">
+                        <div class="container">
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-6 col-xl-8">
+                                    <div class="card mb-5" style="background-color: var(--dark);">
+                                        <div class="card-body d-flex flex-column align-items-center">
+                                            <h2 style="color: var(--light);" class="py-1">Follow Us</h2>
+                                            <!-- <div class="col-md-12">
+                                                <li><img width="200" height="200" src="./img/LED-logo-white-1.png" class="responsive-img"></li>
+                                            </div> -->
+                                            <div class="py-2">
+                                                <a href="https://www.instagram.com/ledpresents/"><i class="fa-brands fa-instagram fa-xl"></i></a>
+                                                <a href="https://www.youtube.com/user/LEDpresents/videos"><i class="fa-brands fa-youtube fa-xl"></i></a>
+                                                <!-- <a href=""><i class="fa-brands fa-tiktok"></i></a> -->
+                                                <a href="https://twitter.com/LEDpresents"><i class="fa-brands fa-twitter fa-xl"></i></a>
+                                                <a href="https://www.facebook.com/LEDpresents"><i class="fa-brands fa-facebook fa-xl"></i></a>
+                                                <a href="https://soundcloud.com/mylifeeveryday"><i class="fa-brands fa-soundcloud fa-xl"></i></a>    
+                                        </div>    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
         </div>
     </section>
 
     <footer class="page-footer p-4">
-        <div class="container ">
+        <div class="container">
             <div class="row">
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <ul>
-                        <li><a href="events">Events</a></li>
+                        <li><a href="#events">Events</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#stay-connected">Stay Connected</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-3">
-                    <ul>
                         <li><a href="./html/calendar.html">Calendar</a></li>
                         <li><a href="./html/privacyPolicy.html">Privacy Policy</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-2">
                     <ul>
-                        <li><a href="https://www.instagram.com/ledpresents/"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
-                        <li><a href="https://www.youtube.com/user/LEDpresents/videos"><i class="fa-brands fa-youtube"></i>YouTube</a></li>
+                        <li><a href="https://www.instagram.com/ledpresents/"><i class="fa-brands fa-instagram"></i>  Instagram</a></li>
+                        <li><a href="https://www.youtube.com/user/LEDpresents/videos"><i class="fa-brands fa-youtube"></i>  YouTube</a></li>
                         <!-- <a href=""><i class="fa-brands fa-tiktok"></i></a> -->
-                        <li><a href="https://twitter.com/LEDpresents"><i class="fa-brands fa-twitter"></i>Twitter</a></li>
-                        <li><a href="https://www.facebook.com/LEDpresents"><i class="fa-brands fa-facebook"></i>Facebook</a></li>
-                        <li><a href="https://soundcloud.com/mylifeeveryday"><i class="fa-brands fa-soundcloud"></i>SoundCloud</a></li>
+                        <li><a href="https://twitter.com/LEDpresents"><i class="fa-brands fa-twitter"></i>  Twitter</a></li>
+                        <li><a href="https://www.facebook.com/LEDpresents"><i class="fa-brands fa-facebook"></i>  Facebook</a></li>
+                        <li><a href="https://soundcloud.com/mylifeeveryday"><i class="fa-brands fa-soundcloud"></i>  SoundCloud</a></li>
                     </ul>
+                </div>
+                <div class="col-sm-1">
+                    <li><img width="150" height="150" src="./img/LED-logo-white-1.png" class="responsive-img"></li>
+                </div>
+                <div class="footer-copyright align-items-center mx-auto">
+                    <p>© 2023 LED Presents</p>
+                    
                 </div>
             </div>
         </div>
-        <div class="footer-copyright">
-            <p>© 2023 LED Presents</p>
-        </div>
+        
     </footer>
 
-    <script src="js/animation.js"></script>
+    <script src="./js/animation.js"></script>
 </body>
 </html>
